@@ -194,8 +194,10 @@ h1 {
 
 # Custom properties
 - AKA CSS variables
+- must be within a selector and start with 2 dashes
 - scope of these are in the div its declared in and all child elements 
     - can declare variable in :root on all selectors
+- you can user @property to declare the type of a custom proeprty as well as initial value and inheritance rule
 - @property can let you define if child elements inherit the custom variable from its parent
     ```
     @property --box-color {
@@ -221,4 +223,13 @@ h1 {
 - var() takes 2 arguments. 
     1) the custom property we want to assign, see above.
     2) the optional fallback value
-    
+
+# Frameworks and Preprocessors
+## Frameworks
+- e.g. Bootstrap, Tailwing, Bulma, Foundation, etc.
+- frameworks help to package up commonly used CSS code, like icons and interactions
+
+## Preprocessors
+- languages to help write CSS more easily, by reducing code reptition and code-saving features
+- when you run the preprocessor, it takes your code and turns it into vanilla CSS so you can import into your project
+- e.g. SASS, LESS, Stylus
